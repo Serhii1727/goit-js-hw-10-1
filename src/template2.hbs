@@ -1,0 +1,15 @@
+{{#each this}}
+<ul class="country-list">
+    <li class="country-list__item">
+        <img class="flag" src="{{flags.svg}}" alt="{{name}}" width="50" height="30">
+        <p class="county-name-common"> {{name.common}}</p>
+    </li>
+</ul>
+<div class="country-info">
+    <p class="county-capital"><span class="text"> Capital </span>: {{capital}}</p>
+    <p class="county-population "><span class="text"> Population</span>: {{population}}</p>
+    <p class="county-languages "><span class="text"> Languages</span>: {{#each languages}}{{this}} {{/each}}</p>
+
+</div>
+
+{{/each}}
